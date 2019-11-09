@@ -5,11 +5,12 @@
 
 - [🛫] Name three lifecycle methods and their purposes.
 
-        #1___ComponentWillMount=> this one is used when you need something to happen before the Component mounts to the DOM
-      
+        #1___ComponentWillUnMount=> Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as cancelled network requests, or cleaning up any DOM elements created in 
+
         #2___ComponentDidMount=>use this one when you need to access some data from an api or source outside of the application but you need it to      happend after the component is mounted to the DOM
+        Called immediately after a component is mounted. Setting state here will trigger re-rendering.
       
-        #3___ComponentDidUpdate=>use this one to compare previous state to current state this is used after the component is mounted to the DOM and     some state changes or needs to be updated
+        #3___ComponentDidUpdate=>Called immediately after updating occurs. Not called for the initial render.
 
 - [🛫] What is the purpose of a custom hook?
 
