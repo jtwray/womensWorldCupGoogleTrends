@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {Players, PlayersList} from '../hooks/useSpring'
 
 export class Fetch extends Component {
     state = { players: "" }
@@ -12,10 +13,12 @@ export class Fetch extends Component {
             .catch(error => console.error(error))
 
     }
+  logPlayers=()=> {this.state.players && console.log(this.state.players)}
     render() {
         return (
             <div>
-                {this.state.players && this.state.players.map(_ => <div key={_.name}>{_.name}</div>)}
+              {this.logPlayers()}
+           <PlayersList cards={this.state.players}/>
             </div>
         )
     }
