@@ -18,4 +18,9 @@
 
 - [🛫] Why is it important to test our apps?
 
-        Testing apps is going to keep me from pushing bugs to production and getting fired from my hard earned dev job. Tesing code helps catch bugs    and shortcomings in code before they mount onto each other and casue a major bog down. tesing code gives a development team confidence in    the fidelity and fortitude of  a codebase. 
+        Testing apps is going to keep me from pushing bugs to production and getting fired from my hard earned dev job. Testing code helps catch bugs and shortcomings in code before they mount onto each other and cause a major bog down. 
+        testing code gives a development team confidence in the fidelity and fortitude of a codebase 
+        allows us to think about edge cases,
+        provies a a way to thoroughly document the codebase,
+        offers a safety net when making changes and when refactoring so we dont have to be scared or 
+        at risk of loss and damage to the code base by making these changes and refactors.. 

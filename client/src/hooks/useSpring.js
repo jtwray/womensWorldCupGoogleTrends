@@ -10,16 +10,17 @@ export function PlayersList({cards}) {
   return (
     <div className="container">
       <div className="row">
-        {cards&&cards.map((card, {country}) => (
+        {cards.length?cards.map((card, {country}) => (
           <div key={card.name}className="column">
             <Card >
                 <Flag countryFlag={card.country}/>
               <div key={card.id} className="card-title">{card.name}</div>
               <div className="card-body">{card.country}</div>
+              <div className="card-body">{card.searches} Google searches in July2019</div>
               
             </Card>
           </div>
-        ))}
+        )):<div>loading...</div>}
       </div>
     </div>
   );
@@ -82,6 +83,9 @@ export function Card({ children }) {
         setAnimatedProps({ xys: [0, 0, 1] });
       }}
       style={{
+
+        
+        
         // If hovered we want it to overlap other cards when it scales up
         zIndex: isHovered ? 2 : 1,
         // Interpolate function to handle css changes
