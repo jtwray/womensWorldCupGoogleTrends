@@ -114,17 +114,19 @@ export class Fetch extends Component {
   };
 
   componentDidMount() {
-    axios
-      .get(`http://localhost:5000/api/players`)
-      .then(
-        response => this.setState({ players: response.data }),
-        _ => console.log(this.state.players)
-      )
-      .catch(error => console.error(error));
+    this.newMethod();
   }
   logPlayers = () => {
     this.state.players && console.log(this.state.players);
   };
+    newMethod() {
+        !this.state.players == false &&
+            axios
+                .get(`http://localhost:5000/api/players`)
+                .then(response => this.setState({ players: response.data }), _ => console.log(this.state.players))
+                .catch(error => console.error(error));
+    }
+
   render() {
     return (
       <div>
