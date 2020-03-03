@@ -7,11 +7,11 @@ import { Fetch } from './components/Fetch'
 function App() {
   return (
     <div className="App ">
-      <Navbar/>
+      <Navbar />
      
   { !<Fetch/>?<code>Loading</code>:"" }
    
-      <Fetch />
+      <Fetch className="container" />
     </div>
   );
 }
