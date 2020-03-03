@@ -10,7 +10,7 @@ export const Flag = ({ countryFlag }) => {
     console.log('countryFlagimg:', countryFlagimg," countryFlagAlt", countryFlagAlt)
     return (
         <div>
-            <img src={countryFlagimg|| countryFlagAlt}  />
+            <img src={countryFlagimg || countryFlagAlt}  />
         </div>
     )
 }
