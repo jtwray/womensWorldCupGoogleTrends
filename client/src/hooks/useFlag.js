@@ -5,7 +5,7 @@ export const useFlag = (country) => {
 
   const [countryFlagAlt, setCountryFlagAlt] = useState("")
   useEffect(() => {
-    Axios.get(`https://pixabay.com/api/?key=14218850-657ec90f61321ccb7cbf65a74&q=${country}+flag&image_type=photo`)
+    Axios.get(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAYKEY_}&q=${country}+flag&image_type=photo`)
       .then(res => setCountryFlagAlt(res.data.hits[0].largeImageURL))
       .then(res => console.log('countryFlagAlt:', res.data.hits[0].largeImageURL))
       .catch(err => console.error(err))
@@ -23,3 +23,11 @@ export const useFlag = (country) => {
 
   return [flag, countryFlagAlt]
 }
+// the pixabay api key is stored in an environment variable either on an express backend , 
+// in a .env file that is listed in the .gitignore file to keep it from pushing to production or
+//  on the server wherever you host the app ie netlify heroku aws etc
+// process.env.REACT_APP_ALLCAPS_KEYNAME is standard syntax relevant to CreateReactApp. Gotta use this for it to pickup the key.
+
+//file on root of client at package.json level 
+//file name : .env
+//REACT_APP_PIXABAYKEY_="###########################"
