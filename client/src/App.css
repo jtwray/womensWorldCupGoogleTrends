@@ -444,3 +444,21 @@ text-align: left;
 code {
     font-size: 8rem;
 }
+.toggled {
+    left: 18px;
+    background: url(https://api.iconify.design/emojione-monotone:new-moon-face.svg) no-repeat center center / contain;
+    box-shadow: 0 0 6px 7px #524e4e59;
+}
+ 
+.toggle {
+    background: #f68819;
+    border-radius: 50px;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    -webkit-transition: .2s;
+    transition: .2s;
+    width: 20px;
+    background: url(https://api.iconify.design/emojione:sun-with-face.svg) no-repeat center center / contain;  
+    box-shadow: 0 0 6px 7px #FF9800;
+}
