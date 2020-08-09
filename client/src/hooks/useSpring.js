@@ -9,6 +9,17 @@ export function PlayersList({cards}) {
     
   return (
     <div className="container">
+    
+   <div class="row">
+        <div class="column">
+         <div class="columnTitles" width="650px">
+          <div><img class="shim" >
+          <div>Player</div>
+         <div>Country</div>
+         <div>Searched</div>
+        </div></div>
+       </div>
+      </div>
       <div className="row">
         {cards.length?cards.map((card, {country}) => (
           <div key={card.name}className="column">
