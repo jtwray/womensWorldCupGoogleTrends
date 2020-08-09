@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Icon, InlineIcon } from '@iconify/react';
+import sunWithFace from '@iconify/icons-emojione/sun-with-face';
+import fullMoonFace from '@iconify/icons-emojione-monotone/full-moon-face';
 import {useDarkMode} from '../hooks/useDarkMode'
 
 const Navbar = () => {
@@ -8,7 +11,8 @@ const Navbar = () => {
     setDarkMode(!darkMode);
   };
   return (
-    
+
+
     
 <nav class="navbar">
     <div class="header--stackedTitle">
@@ -17,10 +21,10 @@ const Navbar = () => {
       <h2>--most Interesting players--</h2>
     </div>
     <div className="dark-mode__toggle">
-        <div
+        <Icon icon={darkMode?sunWithFace:fullMoonFace } 
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
-        />
+       />
     </div>
 </nav>
     
