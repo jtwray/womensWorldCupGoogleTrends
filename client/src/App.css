@@ -253,141 +253,6 @@ text-align: left;
     border: none;
   }
 
-
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* General Styles */
-
 * {
   box-sizing: border-box;
 }
@@ -423,19 +288,6 @@ img {
   font-family: sans-serif;
   text-align: center;
   width: 100%;
-}
-
-.navbar {
-  align-items: center;
-  border-bottom: 1px solid rgb(221, 221, 221);
-  display: flex;
-  height: 70px;
-  justify-content: space-between;
-  padding: 0 3%;
-  width: 100%;
-  -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
-  -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
-  box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
 }
 
 .dark-mode__toggle {
@@ -510,11 +362,6 @@ text-align: left;
   }
 }
 
-
-
-
-
-
   App{width:900px;}
 
   img{width:400px;}
@@ -524,22 +371,6 @@ text-align: left;
   .card div{display:flex; padding:2%; }
   .container,.column{display:flex;flex-wrap: wrap;}
   
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .App {
   text-align: center;
 }
@@ -573,3 +404,38 @@ text-align: left;
     transform: rotate(360deg);
   }
 }
+
+.columnTitles {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.columnTitles>div {
+    display: flex;
+    width: 650px;
+    place-content: flex-end;
+    font-size: 1.4rem;
+    color: #313843;
+    text-shadow: 0.28px 0.46px 2px #313313, 0.24px 0.48px 1px #313333, -0.48px -0.12px 2px white;
+}
+
+.columnTitles div div {
+    padding: 1%;
+    border-radius: 8px;
+    color: darkslategrey;
+    text-shadow: 0.24px 0.24px 4px black, -0.76px -0.76px 1px beige;
+}
+
+.navbar {
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 3%;
+    width: 100%;
+    box-shadow: 0 2px 15px -8px rgba(0,0,0,.42);
+    color: darkslategrey;
+    text-shadow: -0.76px -0.76px 4px black, 1.26px 1.26px 2px beige, 0.76px 0.76px 1px oldlace;
+}
+
