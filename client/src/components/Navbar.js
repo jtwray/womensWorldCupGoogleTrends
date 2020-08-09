@@ -21,9 +21,9 @@ const Navbar = () => {
       <h2>--most Interesting players--</h2>
     </div>
     <div className="dark-mode__toggle">
-        <div 
+        <div  
           onClick={toggleMode}
-          className={darkMode ? 'toggle toggled' : 'toggle'}
+          className={darkMode ? 'toggled' : 'toggle'}
        />
     </div>
 </nav>
