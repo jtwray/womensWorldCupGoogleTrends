@@ -299,20 +299,6 @@ img {
   width: 40px;
 }
 
-.toggle {
-  background: #f68819;
-  border-radius: 50px;
-  height: 18px;
-  left: 0;
-  position: absolute;
-  transition: 0.2s;
-  width: 20px;
-}
-
-.toggled {
-  left: 18px;
-}
-
 .charts {
   width: 80%;
   margin: 0 auto;
@@ -439,19 +425,28 @@ text-align: left;
     box-shadow: 0 2px 15px -8px rgba(0,0,0,.42);
     color: #313843a3;
     text-shadow: 0.24px 0.24px 4px #0f1115, -0.76px -0.76px 1px beige;
+   height:auto;
 }
 
 code {
     font-size: 8rem;
 }
-.toggled {
-    left: 18px;
-    background: url(https://api.iconify.design/emojione-monotone:new-moon-face.svg) no-repeat center center / contain;
-    box-shadow: 0 0 6px 7px #524e4e59;
-}
- 
 .toggle {
     background: #f68819;
+    border-radius: 50px;
+    height: 18px;
+    left: 18px;
+    position: absolute;
+    -webkit-transition: .2s;
+    transition: .2s;
+    width: 20px;
+    background: url(https://api.iconify.design/emojione:sun-with-face.svg) no-repeat 50%/contain;
+    box-shadow: 0 0 6px 7px #ff9800;
+}
+
+.toggled {
+    background: url(https://api.iconify.design/emojione-monotone:new-moon-face.svg) no-repeat 50%/contain;
+    box-shadow: 0 0 6px 7px #607D8B;
     border-radius: 50px;
     height: 18px;
     left: 0;
@@ -459,6 +454,6 @@ code {
     -webkit-transition: .2s;
     transition: .2s;
     width: 20px;
-    background: url(https://api.iconify.design/emojione:sun-with-face.svg) no-repeat center center / contain;  
-    box-shadow: 0 0 6px 7px #FF9800;
+    background: url(https://api.iconify.design/emojione:sun-with-face.svg) no-repeat 50%/contain;
 }
+ 
