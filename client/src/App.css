@@ -440,13 +440,13 @@ code {
     -webkit-transition: .2s;
     transition: .2s;
     width: 20px;
-    background: url(https://api.iconify.design/emojione:sun-with-face.svg) no-repeat 50%/contain;
-    box-shadow: 0 0 6px 7px #ff9800;
+    background: url(https://api.iconify.design/emojione-monotone:new-moon-face.svg) no-repeat 50%/contain;
+    box-shadow: 0 0 6px 7px #607D8B;
 }
 
 .toggled {
-    background: url(https://api.iconify.design/emojione-monotone:new-moon-face.svg) no-repeat 50%/contain;
-    box-shadow: 0 0 6px 7px #607D8B;
+
+    box-shadow: 0 0 6px 7px #ff9800;
     border-radius: 50px;
     height: 18px;
     left: 0;
