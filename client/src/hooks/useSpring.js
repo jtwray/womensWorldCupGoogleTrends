@@ -13,7 +13,7 @@ export function PlayersList({cards}) {
    <div class="row">
         <div class="column">
          <div class="columnTitles" width="650px">
-          <div><img class="shim" >
+          <div>
           <div>Player</div>
          <div>Country</div>
          <div>Searched</div>
