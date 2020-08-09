@@ -21,7 +21,7 @@ const Navbar = () => {
       <h2>--most Interesting players--</h2>
     </div>
     <div className="dark-mode__toggle">
-        <Icon icon={darkMode?sunWithFace:fullMoonFace } 
+        <div 
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
        />
