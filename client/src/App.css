@@ -408,34 +408,39 @@ text-align: left;
 .columnTitles {
     display: flex;
     justify-content: flex-end;
+    min-width:650px;
+    padding:10px;
 }
 
 .columnTitles>div {
     display: flex;
-    width: 650px;
     place-content: flex-end;
     font-size: 1.4rem;
     color: #313843;
-    text-shadow: 0.28px 0.46px 2px #313313, 0.24px 0.48px 1px #313333, -0.48px -0.12px 2px white;
+    text-shadow: 0.28px 0.46px 2px #313313, 0.24px 0.48px 1px #313333, -0.48px -0.12px 2px #fff;
+    padding: 2%;
 }
 
 .columnTitles div div {
     padding: 1%;
     border-radius: 8px;
-    color: darkslategrey;
-    text-shadow: 0.24px 0.24px 4px black, -0.76px -0.76px 1px beige;
+    color: #2f4f4f;
+    text-shadow: 0.24px 0.24px 4px #000, -0.76px -0.76px 1px beige;
 }
 
 .navbar {
     align-items: center;
     border-bottom: 1px solid #ddd;
     display: flex;
-    height: 70px;
     justify-content: space-between;
     padding: 0 3%;
     width: 100%;
+    font-size: 7rem;
     box-shadow: 0 2px 15px -8px rgba(0,0,0,.42);
-    color: darkslategrey;
-    text-shadow: -0.76px -0.76px 4px black, 1.26px 1.26px 2px beige, 0.76px 0.76px 1px oldlace;
+    color: #313843a3;
+    text-shadow: 0.24px 0.24px 4px #0f1115, -0.76px -0.76px 1px beige;
 }
 
+code {
+    font-size: 8rem;
+}
