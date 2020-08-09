@@ -8,16 +8,23 @@ const Navbar = () => {
     setDarkMode(!darkMode);
   };
   return (
-    <nav className="navbar">
-      <h1>most Interesting players of the Women'S World Cup</h1>
-      <div className="dark-mode__toggle">
+    
+    
+<nav class="navbar">
+    <div class="header--stackedTitle">
+      <h1>the Women's World Cup</h1>
+      <code>2019</code>
+      <h2>--most Interesting players--</h2>
+    </div>
+    <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />
-      </div>
-    </nav>
-  );
+    </div>
+</nav>
+    
+    );
 };
 
 export default Navbar;
